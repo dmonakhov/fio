@@ -27,7 +27,7 @@ static int fio_ftruncate_queue(struct thread_data *td, struct io_u *io_u)
 		io_u->error = EINVAL;
 		return FIO_Q_COMPLETED;
 	}
-	ret = ftruncate(f->fd, io_u->offset);
+	 ret = ftruncate(f->fd, io_u->offset);
 
 	if (ret)
 		io_u->error = errno;
