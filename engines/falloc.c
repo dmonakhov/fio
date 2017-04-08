@@ -100,7 +100,6 @@ static struct ioengine_ops ioengine = {
 	.open_file	= open_file,
 	.close_file	= generic_close_file,
 	.get_file_size	= generic_get_file_size,
-	.flags		= FIO_SYNCIO
 };
 
 static void fio_init fio_syncio_register(void)
